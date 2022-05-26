@@ -1,0 +1,38 @@
+{
+  "name": "PowerUwaa",
+  "version": "0.10.0",
+  "description": "PowerUwaa !",
+  "main": "index.js",
+  "author": "",
+  "private": true,
+  "homepage": "",
+  "repository": "",
+  "bugs": "",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "@discordjs/opus": "^0.3.3",
+    "array-move": "^3.0.1",
+    "discord.js": "^12.5.1",
+    "ffmpeg-static": "^4.2.7",
+    "generate-password": "^1.6.0",
+    "i18n": "^0.13.2",
+    "lyrics-finder": "^21.0.5",
+    "moment": "^2.29.1",
+    "moment-duration-format": "^2.3.2",
+    "node-superfetch": "^0.1.11",
+    "opus": "0.0.0",
+    "opusscript": "0.0.7",
+    "simple-youtube-api": "^5.1.1",
+    "snekfetch": "^4.0.4",
+    "soundcloud-downloader": "^0.2.3",
+    "string-progressbar": "^1.0.3",
+    "weather-js": "^2.0.0",
+    "ytdl-core": "^4.5.0",
+    "ytdl-core-discord": "^1.2.5"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
