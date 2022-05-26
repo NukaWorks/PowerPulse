@@ -1,5 +1,5 @@
 const {MessageEmbed} = require("discord.js");
-const {LOCALE} = require("../util/Miscs");
+const {LOCALE} = require("../Utils/Miscs");
 const i18n = require("i18n");
 
 i18n.setLocale(LOCALE);

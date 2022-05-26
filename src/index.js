@@ -1,10 +1,10 @@
 const {Client, Collection} = require("discord.js");
 const {readdirSync} = require("fs");
 const {join} = require("path");
-const {TOKEN, PREFIX, LOCALE} = require("./util/Miscs");
+const {TOKEN, PREFIX, LOCALE} = require("./Utils/Miscs");
 const path = require("path");
 const i18n = require("i18n");
-const config = require("./config.json");
+const config = require("../config.json");
 
 const client = new Client({
     disableMentions: "everyone",
@@ -20,7 +20,7 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 i18n.configure({
     locales: ["en", "fr"],
-    directory: path.join(__dirname, "locales"),
+    directory: path.join(__dirname, "Common/Locales"),
     defaultLocale: "en",
     objectNotation: true,
     register: global,
@@ -62,9 +62,9 @@ client.on("error", console.error);
 /**
  * Import all commands
  */
-const commandFiles = readdirSync(join(__dirname, "commands")).filter((file) => file.endsWith(".js"));
+const commandFiles = readdirSync(join(__dirname, "Modules")).filter((file) => file.endsWith(".js"));
 for (const file of commandFiles) {
-    const command = require(join(__dirname, "commands", `${file}`));
+    const command = require(join(__dirname, "Modules", `${file}`));
     client.commands.set(command.name, command);
 }
 

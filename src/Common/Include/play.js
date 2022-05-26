@@ -1,17 +1,17 @@
 const ytdl = require("ytdl-core-discord");
 const scdl = require("soundcloud-downloader").default;
-const {canModifyQueue, STAY_TIME, LOCALE} = require("../util/Miscs");
+const {canModifyQueue, STAY_TIME, LOCALE} = require("../../Utils/Miscs");
 const i18n = require("i18n");
 i18n.setLocale(LOCALE);
 
 module.exports = {
     async play(song, message) {
-        const {SOUNDCLOUD_CLIENT_ID} = require("../util/Miscs");
+        const {SOUNDCLOUD_CLIENT_ID} = require("../../Utils/Miscs");
 
         let config;
 
         try {
-            config = require("../config.json");
+            config = require("../../../config.json");
         } catch (error) {
             config = null;
         }
