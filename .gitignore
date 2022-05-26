@@ -3,4 +3,5 @@
 /build/
 /temp/
 /package-lock.json
+*.lock
 /config.json
