@@ -33,7 +33,8 @@
     "ytdl-core-discord": "^1.2.5"
   },
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "dev": "nodemon ."
   },
   "devDependencies": {
     "nodemon": "^2.0.16"
