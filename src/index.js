@@ -4,7 +4,7 @@ const {join} = require("path");
 const {TOKEN, PREFIX, LOCALE} = require("./Utils/Miscs");
 const path = require("path");
 const i18n = require("i18n");
-const config = require("../config.json");
+const config = require("../etc/config.json");
 
 const client = new Client({
     disableMentions: "everyone",

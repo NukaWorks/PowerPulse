@@ -12,7 +12,7 @@ exports.canModifyQueue = (member) => {
 let config;
 
 try {
-    config = require("../../config.json");
+    config = require("../../etc/config.json");
 } catch (error) {
     config = null;
 }
