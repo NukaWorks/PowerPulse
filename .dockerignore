@@ -1,0 +1,7 @@
+.idea/
+node_modules/
+build/
+temp/
+package-lock.json
+*.lock
+.git/
