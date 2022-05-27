@@ -53,7 +53,7 @@ client.on("ready", async () => {
         client.user.setActivity(stats, {type: "PLAYING"})
     }, 10000)
 
-    console.log(`PowerUwaa est ready ! sur ${client.guilds.cache.size} serveurs!`)
+    console.log(`PowerUwaa is ready ! on ${client.guilds.cache.size} guilds !`)
 });
 
 client.on("warn", (info) => console.log(info));
