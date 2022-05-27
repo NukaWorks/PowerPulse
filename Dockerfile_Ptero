@@ -3,8 +3,9 @@ MAINTAINER Powerm1nt, <nukaworks@nuka.works>
 RUN adduser --disabled-password --home /home/container container --gecos ""
 USER container
 ENV  USER=container HOME=/home/container
-WORKDIR /home/container
+WORKDIR /app
 COPY . .
 RUN yarn
 COPY entrypoint-ptero.sh /entrypoint.sh
+RUN mv /app/etc /home/container && ln -s /home/container/etc /app/etc
 CMD ["/bin/bash", "/entrypoint.sh"]
