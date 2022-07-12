@@ -31,7 +31,7 @@
     "ytdl-core-discord": "^1.2.5"
   },
   "scripts": {
-    "start": "node .",
+    "start": "pm2 start src/index.js --name poweruwaa --interpreter node --watch --no-daemon",
     "dev": "nodemon ."
   },
   "devDependencies": {
