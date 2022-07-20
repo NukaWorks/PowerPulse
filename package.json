@@ -1,7 +1,7 @@
 {
-  "name": "poweruwaa",
-  "version": "0.10.1",
-  "description": "PowerUwaa !",
+  "name": "powerpulse",
+  "version": "0.10.2",
+  "description": "PowerPulse",
   "main": "src/index.js",
   "author": "",
   "private": true,
